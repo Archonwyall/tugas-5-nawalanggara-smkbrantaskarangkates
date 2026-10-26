@@ -1,4 +1,4 @@
-# Portofolio Nawal anggara putra
+# Portofolio Nawal Anggara Putra
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG 
 (Paket 5, Minggu 01 sampai 05).
 Website ini tampil rapi di ponsel, tablet, dan laptop.
