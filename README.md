@@ -1,7 +1,8 @@
-# Portofolio Andi Pratama
+# Portofolio Nawal anggara putra
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG 
-(Paket 1, Minggu 01 sampai 05).
+(Paket 5, Minggu 01 sampai 05).
 Website ini tampil rapi di ponsel, tablet, dan laptop.
+- Website: https://tugas-5-nawalanggara-smkbrantaskara.vercel.app/
 ## Tampilan
 ![Tampilan beranda portofolio](img/foto-profil.png)
 ## Fitur
@@ -16,4 +17,4 @@ jadwal belajar
 - Git dan GitHub
 ## Tautan
 - Website: menyusul setelah *deploy* ke Vercel
-- Dibuat oleh: Andi Pratama, SMK Mitra
+- Dibuat oleh: Nawal anggara putra,smk brantas karangkates
