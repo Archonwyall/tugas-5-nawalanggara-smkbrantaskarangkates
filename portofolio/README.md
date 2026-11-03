@@ -1,6 +1,6 @@
 # Portofolio Nawal Anggara Putra
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG 
-(Paket 5, Minggu 01 sampai 05).
+(Paket 5 dan 6, Minggu 01 sampai 05).
 Website ini tampil rapi di ponsel, tablet, dan laptop.
 - Website: https://tugas-5-nawalanggara-smkbrantaskara.vercel.app/
 ## Tampilan
@@ -10,11 +10,13 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 jadwal belajar
 - Halaman **Proyek** berisi daftar proyek dalam bentuk kartu
 - Halaman **Kontak** berisi form untuk menghubungi saya
+- Halaman **kalkulator** berisi kalkulator interaktif
 - Tampilan responsif dengan Flexbox dan *media query*
 ## Teknologi
 - HTML5
 - CSS3 (Flexbox dan media query)
 - Git dan GitHub
+- Js dasar
 ## Tautan
 - Website: menyusul setelah *deploy* ke Vercel
 - Dibuat oleh: Nawal anggara putra,smk brantas karangkates
