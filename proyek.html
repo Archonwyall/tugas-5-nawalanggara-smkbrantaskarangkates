@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nawal Anggara Putra | Proyek</title>
+  <title>Nawal anggara putra | Beranda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/kalkulator.js" defer></script>
+<script src="js/main.js" defer></script>
 </head>
 <body>
   <header>
@@ -33,10 +36,25 @@
           </ul>
         </nav>
       </details>
+      <button type="button" id="tombol-tema" class="tombol-
+tema">Mode Gelap</button>
     </div>
   </header>
 
-  <main>
+    <div class="container">
+      <section>
+        <h2>Proyek Saya</h2>
+        <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
+
+        <div class="filter-proyek" role="group" aria-label="Filter proyek berdasarkan kategori">
+          <button type="button" class="filter-proyek-tombol aktif" data-filter-proyek="semua" aria-pressed="true">Semua</button>
+          <button type="button" class="filter-proyek-tombol" data-filter-proyek="HTML" aria-pressed="false">HTML</button>
+          <button type="button" class="filter-proyek-tombol" data-filter-proyek="CSS" aria-pressed="false">CSS</button>
+          <button type="button" class="filter-proyek-tombol" data-filter-proyek="JavaScript" aria-pressed="false">JavaScript</button>
+        </div>
+        <p id="jumlah-proyek" aria-live="polite"></p>
+        <div class="daftar-kartu" id="daftar-proyek"></div>
+      </section>
     <div class="container">
       <section>
         <h2>Proyek Saya</h2>
@@ -45,14 +63,14 @@
         <div class="daftar-kartu">
           <article class="kartu">
             <h3>Modul 1&2</h3>
-            <img src="img/proyek-1.jpeg" alt="Tangkapan layar halaman profil Andi Pratama" width="180">
-            <img src="img/proyek-2.jpeg" alt="Tangkapan layar halaman profil Andi Pratama" width="180">
+            <img src="img/proyek-1.jpeg" alt="Tangkapan layar halaman profil Nawal" width="180">
+            <img src="img/proyek-2.jpeg" alt="Tangkapan layar halaman profil Nawal" width="180">
             <p>Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak. Dibuat dengan HTML dasar di Minggu 01 dan 02.</p>
           </article>
 
           <article class="kartu">
-            <h3>Modul 3</h3>
-            <img src="img/proyek-3.jpeg" alt="Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan" width="280">
+            <h3>Modul 3</h3>Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan
+            <img src="img/proyek-3.jpeg" alt="" width="280">
             <p>Menambahkan interaksi tombol menggunakan JavaScript pada halaman web minggu 02 pada minggu 03.</p>
           </article>
 
@@ -67,7 +85,6 @@
             <img src="img/proyek-5.jpeg" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
             <p>Mendeploy proyek pada vercel dan juga Menambahkan file README.md pada semua proyek sebelumnya pada minggu 05.</p>
           </article>
-
         </div>
       </section>
 

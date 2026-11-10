@@ -232,6 +232,36 @@ footer a {
   color: #FFFFFF;
 }
 
+/* 10. Tombol tema, filter, dan label kategori */
+.tombol-tema {
+  padding: 0.5rem 0.9rem;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
+
+:root {
+  --warna-utama: #1D3557;
+  --warna-judul: #1D3557;
+  --warna-aksen: #E63946;
+  --warna-tautan: #E63946;
+  --warna-latar: #F1FAEE;
+  --warna-teks: #333333;
+  --warna-kartu: #FFFFFF;
+  --warna-garis: #DDDDDD;
+}
+/* 11. Tema gelap: isi variabel diganti saat body memiliki class 
+gelap */
+body.gelap {
+  --warna-utama: #0B1526;
+  --warna-judul: #A8DADC;
+  --warna-tautan: #FF8A8A;
+  --warna-latar: #121A24;
+  --warna-teks: #E3E8EE;
+  --warna-kartu: #1C2836;
+  --warna-garis: #34465A;
+}
+
 /* 8. Tablet: lebar layar 768px ke atas */
 @media (min-width: 768px) {
   .menu-laptop {
@@ -266,4 +296,28 @@ footer a {
   .hero h2 {
     font-size: 2.75rem;
   }
+}
+body {
+  background-color: var(--warna-latar);
+  color: var(--warna-teks);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+  color: var(--warna-judul);
+}
+
+a {
+  color: var(--warna-tautan);
+}
+
+.kartu {
+  background-color: var(--warna-kartu);
+  border: 1px solid var(--warna-garis);
+}
+
+input, textarea, select {
+  background-color: var(--warna-kartu);
+  color: var(--warna-teks);
+  border: 1px solid var(--warna-garis);
 }
