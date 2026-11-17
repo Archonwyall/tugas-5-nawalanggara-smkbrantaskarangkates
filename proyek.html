@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/kalkulator.js" defer></script>
-<script src="js/main.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
   <header>
     <div class="container navbar">
@@ -21,7 +23,7 @@
           <li><a href="index.html">Beranda</a></li>
           <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
-           <li><a href="kalkulator.html">Kalkulator</a></li>
+          <li><a href="kalkulator.html">Kalkulator</a></li>
         </ul>
       </nav>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
@@ -32,7 +34,7 @@
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
             <li><a href="kontak.html">Kontak</a></li>
-             <li><a href="kalkulator.html">Kalkulator</a></li>
+            <li><a href="kalkulator.html">Kalkulator</a></li>
           </ul>
         </nav>
       </details>
@@ -41,77 +43,63 @@ tema">Mode Gelap</button>
     </div>
   </header>
 
+  <div class="container">
+    <section>
+      <h2>Proyek Saya</h2>
+      <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
+
+      <div class="filter-proyek" role="group" aria-label="Filter proyek berdasarkan kategori">
+        <button type="button" class="filter-proyek-tombol aktif" data-filter-proyek="semua"
+          aria-pressed="true">Semua</button>
+        <button type="button" class="filter-proyek-tombol" data-filter-proyek="HTML & CSS" aria-pressed="false">HTML &
+          CSS</button>
+        <button type="button" class="filter-proyek-tombol" data-filter-proyek="vercel"
+          aria-pressed="false">Vercel</button>
+        <button type="button" class="filter-proyek-tombol" data-filter-proyek="git & github"
+          aria-pressed="false"> Git & GitHub</button>
+        <button type="button" class="filter-proyek-tombol" data-filter-proyek="JavaScript"
+          aria-pressed="false">JavaScript</button>
+      </div>
+      <p id="jumlah-proyek" aria-live="polite"></p>
+      <div class="daftar-kartu" id="daftar-proyek"></div>
+    </section>
     <div class="container">
-      <section>
         <h2>Proyek Saya</h2>
         <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
-
-        <div class="filter-proyek" role="group" aria-label="Filter proyek berdasarkan kategori">
-          <button type="button" class="filter-proyek-tombol aktif" data-filter-proyek="semua" aria-pressed="true">Semua</button>
-          <button type="button" class="filter-proyek-tombol" data-filter-proyek="HTML" aria-pressed="false">HTML</button>
-          <button type="button" class="filter-proyek-tombol" data-filter-proyek="CSS" aria-pressed="false">CSS</button>
-          <button type="button" class="filter-proyek-tombol" data-filter-proyek="JavaScript" aria-pressed="false">JavaScript</button>
-        </div>
-        <p id="jumlah-proyek" aria-live="polite"></p>
-        <div class="daftar-kartu" id="daftar-proyek"></div>
+      <section class="kartu">
+        <h2>Repositori GitHub Saya</h2>
+        <p>Daftar ini diambil langsung dari GitHub setiap kali halaman
+          dibuka.</p>
+        <p id="status-repo"></p>
+        <ul id="daftar-repo"></ul>
       </section>
-    <div class="container">
-      <section>
-        <h2>Proyek Saya</h2>
-        <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
-
-        <div class="daftar-kartu">
-          <article class="kartu">
-            <h3>Modul 1&2</h3>
-            <img src="img/proyek-1.jpeg" alt="Tangkapan layar halaman profil Nawal" width="180">
-            <img src="img/proyek-2.jpeg" alt="Tangkapan layar halaman profil Nawal" width="180">
-            <p>Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak. Dibuat dengan HTML dasar di Minggu 01 dan 02.</p>
-          </article>
-
-          <article class="kartu">
-            <h3>Modul 3</h3>Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan
-            <img src="img/proyek-3.jpeg" alt="" width="280">
-            <p>Menambahkan interaksi tombol menggunakan JavaScript pada halaman web minggu 02 pada minggu 03.</p>
-          </article>
-
-          <article class="kartu">
-            <h3>Modul 4</h3>
-            <img src="img/proyek-4.jpeg" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-            <p>Mengaplikasikan Git dan GitHub pada semua proyek pada minggu 04.</p>
-          </article> 
-          
-          <article class="kartu">
-            <h3>Modul 5</h3>
-            <img src="img/proyek-5.jpeg" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-            <p>Mendeploy proyek pada vercel dan juga Menambahkan file README.md pada semua proyek sebelumnya pada minggu 05.</p>
-          </article>
-        </div>
-      </section>
-
       <!-- FAQ dengan details dan summary -->
       <section class="kartu">
         <h2>Pertanyaan yang Sering Diajukan</h2>
         <details>
           <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
-          <p>Semua proyek di halaman ini dibuat dengan HTML. Tampilannya akan saya rapikan dengan CSS mulai Minggu 03.</p>
+          <p>Semua proyek di halaman ini dibuat dengan HTML. Tampilannya akan saya rapikan dengan CSS mulai Minggu 03.
+          </p>
         </details>
         <details>
           <summary>Apakah saya menerima pesanan pembuatan website?</summary>
           <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
         </details>
-         <details>
+        <details>
           <summary>Bagaimana saya membuat website ini?</summary>
           <p>Proyek ini saya buat dari template modul dengan sedikit mengubah dan menambahkan beberapa elemen.</p>
         </details>
       </section>
     </div>
-  </main>
+    </main>
 
-  <footer>
-    <p>Kontak: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nawal.xrpl@gmail.com">Nawal@gmail.com</a> |
-      <a href="https://github.com/Archonwyall/" target="_blank">GitHub</a> |
-      <a href="https://www.youtube.com/@Anggara-starly/" target="_blank">YouTube</a></p>
-    <p>&copy; 2026 Nawal Anggara Putra. Dibuat di Kelas Industri UBIG.</p>
-  </footer>
+    <footer>
+      <p>Kontak: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nawal.xrpl@gmail.com">Nawal@gmail.com</a> |
+        <a href="https://github.com/Archonwyall/" target="_blank">GitHub</a> |
+        <a href="https://www.youtube.com/@Anggara-starly/" target="_blank">YouTube</a>
+      </p>
+      <p>&copy; 2026 Nawal Anggara Putra. Dibuat di Kelas Industri UBIG.</p>
+    </footer>
 </body>
+
 </html>

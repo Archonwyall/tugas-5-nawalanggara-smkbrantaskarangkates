@@ -1,13 +1,6 @@
 // JavaScript Portofolio Nawal Anggara Putra
 
 // 1. Data Keahlian (Beranda)
-const skills = [
-  { nama: "HTML", level: "Menengah" },
-  { nama: "CSS", level: "Menengah" },
-  { nama: "Git dan GitHub", level: "Dasar" },
-  { nama: "Desain poster dengan Canva", level: "Mahir" },
-  { nama: "JavaScript", level: "Dasar" },
-];
 
 const daftarSkill = document.querySelector("#daftar-skill");
 const jumlahSkill = document.querySelector("#jumlah-skill");
@@ -25,21 +18,21 @@ if (daftarSkill && jumlahSkill) {
 const proyek = [
   {
     judul: "Modul 1&2",
-    kategori: "HTML",
+    kategori: "HTML & CSS",
     gambar: ["img/proyek-1.jpeg", "img/proyek-2.jpeg"],
     alt: "Tangkapan layar halaman profil Nawal",
     deskripsi: "Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak.",
   },
   {
     judul: "Modul 3",
-    kategori: "HTML",
+    kategori: "JavaScript",
     gambar: "img/proyek-3.jpeg",
     alt: "Tangkapan layar form kontak",
     deskripsi: "Form dengan label dan validasi bawaan browser.",
   },
   {
     judul: "Modul 4",
-    kategori: "git and git hub",
+    kategori: "git & github",
     gambar: "img/proyek-4.jpeg",
     alt: "Tangkapan layar modul 4",
     deskripsi: "Mengaplikasikan Git dan GitHub pada semua proyek pada minggu 04.",
@@ -159,4 +152,42 @@ if (kontakPesan && kontakHitung) {
   kontakPesan.addEventListener("input", () => {
     kontakHitung.textContent = `${kontakPesan.value.length}/300 karakter`;
   });
+}
+// 5. Repositori GitHub terbaru (halaman Proyek)
+const username = "Archonwyall";
+const alamatRepo = `https://api.github.com/users/${username}/repos`;
+const pilihan = "?sort=updated&per_page=6";
+
+const daftarRepo = document.querySelector("#daftar-repo");
+const statusRepo = document.querySelector("#status-repo");
+
+async function ambilRepo() {
+  statusRepo.textContent = "Memuat...";
+
+  try {
+    const response = await fetch(alamatRepo + pilihan);
+    if (!response.ok) {
+      throw new Error(`Status ${response.status}`);
+    }
+    const repos = await response.json();
+
+    repos.forEach((repo) => {
+      const item = document.createElement("li");
+      const tautan = document.createElement("a");
+      tautan.href = repo.html_url;
+      tautan.target = "_blank";
+      tautan.textContent = repo.name;
+      item.appendChild(tautan);
+      daftarRepo.appendChild(item);
+    });
+
+    statusRepo.textContent = `${repos.length} repositori yang terakhir diperbarui:`;
+  } catch (error) {
+    statusRepo.textContent = "Maaf, daftar repositori gagal dimuat. Periksa username atau coba lagi nanti.";
+    console.error(error);
+  }
+}
+
+if (daftarRepo) {
+  ambilRepo();
 }
