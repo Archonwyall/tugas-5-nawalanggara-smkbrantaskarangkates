@@ -19,42 +19,42 @@ const proyek = [
   {
     judul: "Modul 1&2",
     kategori: "HTML & CSS",
-    gambar: ["img/proyek-1.jpeg", "img/proyek-2.jpeg"],
+    gambar: ["img/proyek-1.webp", "img/proyek-2.webp"],
     alt: "Tangkapan layar halaman profil Nawal",
     deskripsi: "Halaman web pertama saya, berisi perkenalan, foto, hobi, cita-cita, keahlian, dan kontak.",
   },
   {
     judul: "Modul 3",
     kategori: "JavaScript",
-    gambar: "img/proyek-3.jpeg",
+    gambar: "img/proyek-3.webp",
     alt: "Tangkapan layar form kontak",
     deskripsi: "Form dengan label dan validasi bawaan browser.",
   },
   {
     judul: "Modul 4",
     kategori: "git & github",
-    gambar: "img/proyek-4.jpeg",
+    gambar: "img/proyek-4.webp",
     alt: "Tangkapan layar modul 4",
     deskripsi: "Mengaplikasikan Git dan GitHub pada semua proyek pada minggu 04.",
   },
   {
     judul: "Modul 5",
     kategori: "vercel",
-    gambar: "img/proyek-5.jpeg",
+    gambar: "img/proyek-5.webp",
     alt: "Tangkapan layar modul 5",
     deskripsi: "Mendeploy proyek pada Vercel dan menambahkan file README.md.",
   },
   {
     judul: "Kalkulator Nilai Rapor",
     kategori: "JavaScript",
-    gambar: "img/image.png",
+    gambar: "img/image.webp",
     alt: "Tangkapan layar kalkulator",
     deskripsi: "Aplikasi penghitung nilai rata-rata dan predikat rapor.",
   },
   {
     judul: "Lima Soal Logika",
     kategori: "JavaScript",
-    gambar: "img/kalkulator.jpeg",
+    gambar: "img/kalkulator.webp",
     alt: "Tangkapan layar soal logika",
     deskripsi: "Latihan pemecahan masalah logika pemrograman JavaScript.",
   }
@@ -143,16 +143,6 @@ if (daftarProyek && jumlahProyek) {
   tampilkanProyek(proyek);
 }
 
-// 3. Penghitung karakter pesan (halaman kontak)
-const kontakPesan = document.querySelector("#pesan");
-const kontakHitung = document.querySelector("#hitung-karakter");
-
-if (kontakPesan && kontakHitung) {
-  kontakHitung.textContent = `${kontakPesan.value.length}/300 karakter`;
-  kontakPesan.addEventListener("input", () => {
-    kontakHitung.textContent = `${kontakPesan.value.length}/300 karakter`;
-  });
-}
 // 5. Repositori GitHub terbaru (halaman Proyek)
 const username = "Archonwyall";
 const alamatRepo = `https://api.github.com/users/${username}/repos`;

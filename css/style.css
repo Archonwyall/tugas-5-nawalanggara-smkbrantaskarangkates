@@ -23,7 +23,9 @@ body {
   background-color: #ffffff;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Poppins", Arial, sans-serif;
   color: #000000;
   line-height: 1.3;
@@ -33,7 +35,9 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin-bottom: 1rem;
 }
 
@@ -50,9 +54,10 @@ a {
 
 header {
   background-color: #131eb3;
-  box-shadow:0 5px 20px #000000;
+  box-shadow: 0 5px 20px #000000;
   color: #FFFFFF;
   padding: 1rem 0;
+  margin-bottom: 1.5rem;
 }
 
 header h1 {
@@ -120,7 +125,7 @@ main {
 .hero img {
   border: 10px solid #131eb3;
   border-radius: 50%;
-  box-shadow: 0 0px 20px #000000 ;
+  box-shadow: 0 0px 20px #000000;
 }
 
 .hero h2 {
@@ -132,7 +137,7 @@ main {
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   background-color: #131eb3;
-  box-shadow:0 6px 20px #000000;
+  box-shadow: 0 6px 20px #000000;
   color: #FFFFFF;
   font-weight: 600;
   text-decoration: none;
@@ -175,7 +180,8 @@ caption {
   margin-bottom: 0.5rem;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #CCCCCC;
   padding: 0.5rem 0.75rem;
   text-align: left;
@@ -191,7 +197,9 @@ label {
   font-weight: 600;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   max-width: 22rem;
   padding: 0.6rem;
@@ -207,12 +215,13 @@ button {
   border: none;
   border-radius: 6px;
   background-color: #131eb3;
-  box-shadow:0 6px 20px #000000;
+  box-shadow: 0 6px 20px #000000;
   color: #FFFFFF;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  margin: 0.25rem;
 }
 
 
@@ -250,6 +259,7 @@ footer a {
   --warna-kartu: #FFFFFF;
   --warna-garis: #DDDDDD;
 }
+
 /* 11. Tema gelap: isi variabel diganti saat body memiliki class 
 gelap */
 body.gelap {
@@ -297,13 +307,16 @@ body.gelap {
     font-size: 2.75rem;
   }
 }
+
 body {
   background-color: var(--warna-latar);
   color: var(--warna-teks);
   transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--warna-judul);
 }
 
@@ -316,7 +329,9 @@ a {
   border: 1px solid var(--warna-garis);
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   background-color: var(--warna-kartu);
   color: var(--warna-teks);
   border: 1px solid var(--warna-garis);
